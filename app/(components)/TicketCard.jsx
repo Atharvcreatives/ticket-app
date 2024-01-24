@@ -19,8 +19,13 @@ const TicketCard = () => {
       </p>
       <div className="flex-grow"></div>
       <div className="flex mt-2">
-      <ProgressDisplay />
-      <StatusDisplay />
+        <div className="flex flex-col">
+          <p className="text-xs my-1">24/01/31 15:20PM</p>
+          <ProgressDisplay />
+        </div>
+        <div className="ml-auto flex items-end">
+        <StatusDisplay />
+        </div>
       </div>
     </div>
   );
